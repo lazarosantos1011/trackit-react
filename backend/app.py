@@ -6,7 +6,7 @@ from routes.equipamento_routes import equipamento_bp
 
 app = Flask(__name__, static_folder='../assets')
 app.config.from_object(Config)
-CORS(app)
+CORS(app, origins=["http://localhost:5173"])
 
 # Inicializar o banco de dados
 db.init_app(app)
@@ -21,17 +21,17 @@ with app.app_context():
 # Rota para servir o index.html
 # @app.route('/')
 # def index():
-#    return send_from_directory('../', 'index.html')
+#     return send_from_directory('../', 'index.html')
 
 # Rota para servir o dashboard.html
 # @app.route('/dashboard')
 # def dashboard():
-#   return send_from_directory('../', 'dashboard.html')
+#     return send_from_directory('../', 'dashboard.html')
 
 # Rota para servir os arquivos estáticos (CSS, JS, imagens...)
 # @app.route('/assets/<path:path>')
 # def serve_assets(path):
-#    return send_from_directory(app.static_folder, path)
+#     return send_from_directory(app.static_folder, path)
 
 if __name__ == '__main__':
     app.run(debug=True)
