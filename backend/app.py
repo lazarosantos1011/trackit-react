@@ -6,7 +6,7 @@ from routes.equipamento_routes import equipamento_bp
 
 app = Flask(__name__, static_folder='../assets')
 app.config.from_object(Config)
-CORS(app, origins=["http://localhost:5173"])
+CORS(app)
 
 # Inicializar o banco de dados
 db.init_app(app)
