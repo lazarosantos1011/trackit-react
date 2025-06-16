@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const EquipmentTable = ({ equipamentos, onEdit, onDelete }) => {
   const [sortCol, setSortCol] = useState('id');
