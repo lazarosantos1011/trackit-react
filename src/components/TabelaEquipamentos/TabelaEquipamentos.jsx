@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './TabelaEquipamentos.css';
 
 const TabelaEquipamentos = ({ equipamentos, onEdit, onDelete }) => {
   const [sortCol, setSortCol] = useState('id');

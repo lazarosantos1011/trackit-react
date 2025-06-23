@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
-import Cabecalho from './Cabecalho';
-import Rodape from './Rodape';
-import TabelaEquipamentos from './TabelaEquipamentos';
-import ModalEquipamento from './ModalEquipamento';
-import Graficos from './Graficos';
-import { getEquipamentos, saveEquipamento, deleteEquipamento } from '../services/api';
+import Cabecalho from '../Cabecalho/Cabecalho';
+import Rodape from '../Rodape/Rodape';
+import TabelaEquipamentos from '../TabelaEquipamentos/TabelaEquipamentos';
+import ModalEquipamento from '../ModalEquipamento/ModalEquipamento';
+import Graficos from '../Graficos/Graficos';
+import { getEquipamentos, saveEquipamento, deleteEquipamento } from '../../services/api';
+import './Dashboard.css';
 
 const Dashboard = () => {
   const [equipamentos, setEquipamentos] = useState([]);

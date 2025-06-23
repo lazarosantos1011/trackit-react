@@ -1,3 +1,5 @@
+import './Rodape.css';
+
 const Rodape = () => (
   <footer id="footer">
     <p>&copy; 2025 TrackIT. Todos os direitos reservados.</p>

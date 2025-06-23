@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import './ModalEquipamento.css';
 
 const ModalEquipamento = ({ open, onClose, onSave, equipamento }) => {
   const [nome, setNome] = useState('');

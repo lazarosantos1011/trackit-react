@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import Chart from 'chart.js/auto';
+import './Graficos.css';
 
 const Graficos = ({ equipamentos }) => {
   const metricsRef = useRef(null);

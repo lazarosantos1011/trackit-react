@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import FormLogin from './components/FormLogin';
-import Dashboard from './components/Dashboard';
+import FormLogin from './components/FormLogin/FormLogin';
+import Dashboard from './components/Dashboard/Dashboard';
 
 const App = () => (
   <BrowserRouter>
