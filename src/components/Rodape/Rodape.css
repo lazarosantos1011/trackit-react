@@ -1,0 +1,9 @@
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding: 1rem;
+    background-color: var(--cor-plano-de-fundo);
+}

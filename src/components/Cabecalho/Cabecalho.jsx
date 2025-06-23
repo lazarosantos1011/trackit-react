@@ -1,4 +1,5 @@
-import logo from '../assets/images/TrackIT_logo.png';
+import logo from '../../assets/images/TrackIT_logo.png';
+import './Cabecalho.css';
 
 const Header = ({ onLogout, showLogout = false }) => (
   <header id="header">
