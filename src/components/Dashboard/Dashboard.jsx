@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
-import Header from '../Cabecalho/Cabecalho';
-import Footer from '../Rodape/Rodape';
-import EquipmentTable from '../TabelaEquipamentos/TabelaEquipamentos';
-import EquipmentModal from '../ModalEquipamento/ModalEquipamento';
-import Charts from '../Graficos/Graficos';
+import Cabecalho from '../Cabecalho/Cabecalho';
+import Rodape from '../Rodape/Rodape';
+import TabelaEquipamentos from '../TabelaEquipamentos/TabelaEquipamentos';
+import ModalEquipamento from '../ModalEquipamento/ModalEquipamento';
+import Graficos from '../Graficos/Graficos';
 import { getEquipamentos, saveEquipamento, deleteEquipamento } from '../../services/api';
 import './Dashboard.css';
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './TabelaEquipamentos.css';
 
 const TabelaEquipamentos = ({ equipamentos, onEdit, onDelete }) => {

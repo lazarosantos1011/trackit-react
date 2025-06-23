@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import LoginForm from './components/FormLogin/FormLogin';
+import FormLogin from './components/FormLogin/FormLogin';
 import Dashboard from './components/Dashboard/Dashboard';
 
 const App = () => (
