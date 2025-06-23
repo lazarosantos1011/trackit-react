@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './TabelaEquipamentos.css';
 
-const EquipmentTable = ({ equipamentos, onEdit, onDelete }) => {
+const TabelaEquipamentos = ({ equipamentos, onEdit, onDelete }) => {
   const [sortCol, setSortCol] = useState('id');
   const [asc, setAsc] = useState(true);
 
@@ -45,4 +45,4 @@ const EquipmentTable = ({ equipamentos, onEdit, onDelete }) => {
   );
 };
 
-export default EquipmentTable;
+export default TabelaEquipamentos;

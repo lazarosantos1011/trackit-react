@@ -55,11 +55,11 @@ const Dashboard = () => {
 
   return (
     <>
-      <Header onLogout={handleLogout} showLogout />
+      <Cabecalho onLogout={handleLogout} showLogout />
       <main id="dashboard_container">
         <section className="dashboard_metrics">
           <h2>Resumo</h2>
-          <Charts equipamentos={equipamentos} />
+          <Graficos equipamentos={equipamentos} />
         </section>
         <section className="dashboard_content">
           <h2>Gerenciamento de Equipamentos</h2>
@@ -68,20 +68,20 @@ const Dashboard = () => {
             <input type="text" id="search_input" placeholder="Buscar por nome ou tipo..."
               value={search} onChange={e => setSearch(e.target.value)} />
           </div>
-          <EquipmentTable
+          <TabelaEquipamentos
             equipamentos={filtered}
             onEdit={handleEdit}
             onDelete={handleDelete}
           />
         </section>
-        <EquipmentModal
+        <ModalEquipamento
           open={modalOpen}
           onClose={() => setModalOpen(false)}
           onSave={handleSave}
           equipamento={editEquip}
         />
       </main>
-      <Footer />
+      <Rodape />
     </>
   );
 };

@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import Chart from 'chart.js/auto';
 import './Graficos.css';
 
-const Charts = ({ equipamentos }) => {
+const Graficos = ({ equipamentos }) => {
   const metricsRef = useRef(null);
   const availRef = useRef(null);
   const metricsChart = useRef(null);
@@ -75,4 +75,4 @@ const Charts = ({ equipamentos }) => {
   );
 };
 
-export default Charts;
+export default Graficos;

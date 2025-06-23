@@ -5,7 +5,7 @@ import Dashboard from './components/Dashboard/Dashboard';
 const App = () => (
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<LoginForm />} />
+      <Route path="/" element={<FormLogin />} />
       <Route path="/dashboard" element={<Dashboard />} />
     </Routes>
   </BrowserRouter>
