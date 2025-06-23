@@ -1,6 +1,6 @@
 import logo from '../assets/images/TrackIT_logo.png';
 
-const Header = ({ onLogout, showLogout = false }) => (
+const Cabecalho = ({ onLogout, showLogout = false }) => (
   <header id="header">
     <div className="header__logo-container">
       <img src={logo} alt="Logo do TrackIT" id="logo" />
@@ -12,4 +12,4 @@ const Header = ({ onLogout, showLogout = false }) => (
   </header>
 );
 
-export default Header;
+export default Cabecalho;

@@ -1,4 +1,4 @@
-const Footer = () => (
+const Rodape = () => (
   <footer id="footer">
     <p>&copy; 2025 TrackIT. Todos os direitos reservados.</p>
     <p>
@@ -7,4 +7,4 @@ const Footer = () => (
   </footer>
 );
 
-export default Footer;
+export default Rodape;

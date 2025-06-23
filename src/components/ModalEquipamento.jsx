@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
-const EquipmentModal = ({ open, onClose, onSave, equipamento }) => {
+const ModalEquipamento = ({ open, onClose, onSave, equipamento }) => {
   const [nome, setNome] = useState('');
   const [tipo, setTipo] = useState('');
   const [status, setStatus] = useState('Disponível');
@@ -58,4 +58,4 @@ const EquipmentModal = ({ open, onClose, onSave, equipamento }) => {
   );
 };
 
-export default EquipmentModal;
+export default ModalEquipamento;

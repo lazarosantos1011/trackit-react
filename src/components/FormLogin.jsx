@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const LoginForm = () => {
+const FormLogin = () => {
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
   const navigate = useNavigate();
@@ -40,4 +40,4 @@ const LoginForm = () => {
   );
 };
 
-export default LoginForm;
+export default FormLogin;
